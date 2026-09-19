@@ -1,25 +1,28 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+| ---- | ------- |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.10.5 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 5.6.0, < 6.0.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+| ---- | ------- |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 5.6.0, < 6.0.0 |
 
 ## Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_name"></a> [name](#module\_name) | app.terraform.io/leshawn-rice/standard-naming/azurerm | n/a |
 | <a name="module_tags"></a> [tags](#module\_tags) | app.terraform.io/leshawn-rice/tags/azurerm | n/a |
 
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [azurerm_subscription.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/subscription) | resource |
 | [azurerm_billing_enrollment_account_scope.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/billing_enrollment_account_scope) | data source |
 | [azurerm_billing_mca_account_scope.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/billing_mca_account_scope) | data source |
@@ -28,7 +31,7 @@ No requirements.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_account_type"></a> [account\_type](#input\_account\_type) | The type of Azure Account. Valid values are 'MCA', 'MPA', & 'EA' | `string` | n/a | yes |
 | <a name="input_application"></a> [application](#input\_application) | The application the subscription is being used for. Purely for naming purposes if a name is not provided. | `string` | `null` | no |
 | <a name="input_billing_account_name"></a> [billing\_account\_name](#input\_billing\_account\_name) | ID of the Azure Billing Account to create the subscription in. | `string` | n/a | yes |
@@ -51,7 +54,7 @@ No requirements.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_alias"></a> [alias](#output\_alias) | n/a |
 | <a name="output_id"></a> [id](#output\_id) | n/a |
 | <a name="output_name"></a> [name](#output\_name) | n/a |
